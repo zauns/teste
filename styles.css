@@ -1,0 +1,92 @@
+
+body{
+    font-family: 'Poppins';
+    background-color: #050A24;
+    margin: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+
+}
+#forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background-color: #ffffff;
+    width: 540px;
+    height: 456px;
+    border-radius: 20px;
+}
+#titulo-forms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 48px 0 0 0;
+    width: 396px;
+    height: 28px;
+}
+h1{
+    color: #101828;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0px;
+
+}
+input{
+    margin-top: 12px;
+    border: 1px;
+    border-radius: 8px; 
+    border-style: solid;
+    border-color: #D0D5DD;
+    color: #344054;
+    width: 380px;
+    height: 48px;
+    padding-left: 16px;
+}
+#preenchimento-forms{
+    width: 396px;
+    height: 176px;
+}
+h2{
+    margin: 0;
+    width: fit-content;
+    color: #344054;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#h2-senha{
+    margin-top: 24px;
+    display: flex;
+    flex: content;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#entrar-cadastro{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#entrar{
+    font-size: 16px;
+    font-weight: 600;
+    width: 396px;
+    height: 52px;
+    background-color: #1570EF;
+    color: #FCFCFD;
+    border: none;
+    border-radius: 8px;
+}
+h3{
+    width: fit-content;
+    color: #98A2B3;
+    font-size: 16px;
+    font-weight: 400;
+}
