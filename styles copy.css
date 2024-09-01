@@ -18,7 +18,7 @@
         gap: 32px;
         background-color: #ffffff;
         width: 540px;
-        height: 456px;
+        height: 552px;
         border-radius: 20px;
     }
     #titulo-forms{
@@ -59,7 +59,9 @@
         font-size: 16px;
         font-weight: 400;
     }
-
+    #h2-email{
+        margin-top: 24px;
+    }
     #h2-senha{
         margin-top: 24px;
         display: flex;
@@ -87,7 +89,7 @@
     }
     #entrar:hover{
         background-color: #050A24;
-        cursor: pointer; 
+        cursor: pointer;
     }
     h3{
         width: fit-content;
@@ -117,7 +119,7 @@
         gap: 24px;
         background-color: #ffffff;
         width: 288px;
-        height: 376px;
+        height: 476px;
         border-radius: 20px;
     }
     #titulo-forms{
@@ -182,6 +184,7 @@
         color: #FCFCFD;
         border: none;
         border-radius: 8px;
+
     }
     h3{
         width: fit-content;
