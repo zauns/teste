@@ -11,6 +11,14 @@
         height: 100vh;
 
     }
+    a{
+        color: #1570EF;
+        text-decoration: none; 
+        transition: color 0.3s ease;
+    }
+    a:hover{
+        color: #050A24;
+    }
     #forms{
         display: flex;
         flex-direction: column;
@@ -47,6 +55,10 @@
         width: 380px;
         height: 48px;
         padding-left: 16px;
+    }
+    input::placeholder{
+        font-family: 'Poppins';
+        color: #98A2B3;
     }
     #preenchimento-forms{
         width: 396px;
@@ -111,6 +123,10 @@
         align-items: center; 
         height: 100vh;
 
+    }
+    a{
+        color: #1570EF;
+        text-decoration: none;
     }
     #forms{
         display: flex;
