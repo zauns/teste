@@ -11,6 +11,16 @@
         height: 100vh;
 
     }
+    .error {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        font-size: 14px;
+        color: red;
+        background-color: rgb(255, 206, 190);
+        border-radius: 0px 0px 4px 4px;
+        padding-left: 4px;
+    }
     a{
         color: #1570EF;
         text-decoration: none; 
@@ -19,7 +29,7 @@
     a:hover{
         color: #050A24;
     }
-    #forms{
+    #bloco-forms{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,7 +58,7 @@
     input{
         margin-top: 12px;
         border: 1px;
-        border-radius: 8px; 
+        border-radius: 8px 0px 8px 0px; 
         border-style: solid;
         border-color: #D0D5DD;
         color: #344054;
@@ -61,8 +71,7 @@
         color: #98A2B3;
     }
     #preenchimento-forms{
-        width: 396px;
-        height: 176px;
+        gap: 32px;
     }
     h2{
         margin: 0;
@@ -71,24 +80,14 @@
         font-size: 16px;
         font-weight: 400;
     }
-    #h2-email{
-        margin-top: 24px;
-    }
-    #h2-senha{
-        margin-top: 24px;
-        display: flex;
-        flex: content;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #entrar-cadastro{
+    #enviar-cadastro{
         margin-top: 24px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #entrar{
+    #enviar{
         font-size: 16px;
         font-weight: 600;
         width: 396px;
@@ -99,7 +98,7 @@
         border-radius: 8px;
         transition: background-color 0.4s;
     }
-    #entrar:hover{
+    #enviar:hover{
         background-color: #050A24;
         cursor: pointer;
     }
@@ -109,6 +108,15 @@
         font-size: 16px;
         font-weight: 400;
     }
+    .segmento-forms {
+        margin-top: 24px;
+        z-index: 2;
+    }
+    #nome-forms {
+        margin-top: 0px;
+    }
+    
+    
 }
 @media (max-width: 559px){
 

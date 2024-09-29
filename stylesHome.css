@@ -1,0 +1,151 @@
+@media(min-width: 560px){
+    body {
+        color: white;
+        font-family: 'Poppins';
+        margin: 0;
+        background-color: #050A24;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        gap: 40%;
+        border-bottom: 1px solid white;
+    }
+    nav {
+        font-size: 24px;
+        font-weight: 500;
+        height: fit-content;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline;
+        margin-right: 24px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    #logo {
+        width: 238px;
+        height: 72px;
+        margin-left: 80px;
+    }
+    main {
+        margin-top: 52px;
+        display: flex;
+        flex-direction: row;
+        gap: 6%;
+
+    }
+    #feed {
+        margin-left: 20%;
+        width: 42.5%;
+        height: fit-content;
+        border: 1px solid white;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #sugestoes {
+        width: 334px;
+        height: fit-content;
+        background-color: rgba(30, 30, 30, 0.5);
+        border-radius: 20px;
+    }
+    #perfil {
+        display: flex;
+        flex-direction: row;
+        margin: 0 20px 20px 20px;
+        justify-content: space-between;
+    }
+    .pfp {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    #user {
+        display: flex;
+        flex-direction: column;
+    }
+    .botaoazul {
+        width: 92px;
+        height: 30px;
+        border: none;
+        padding: 0;
+        background-color: #1570EF;
+        border-radius: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+    }
+    .botaoazul:hover {
+        cursor: pointer;
+    }
+    #userpost {
+        display: flex;
+        flex-direction: column;
+        height: 177px;  
+        border-bottom: 1px solid white;
+    }
+    #inputpost {
+        font-family: 'Poppins';
+        font-size: 16px;
+        width: 100%;
+        height: 89px;
+        margin: 20px 20px 20px 0;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        resize: none;
+    }
+    #inputpost::placeholder {
+        color: rgba(250, 250, 250, 0.75);
+        font-size: 16px;
+        font-family: 'Poppins';
+    }
+    .usericons:hover {
+        cursor: pointer;
+    }
+    .feedpost {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid white;
+        
+    }
+    .post {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        margin-right: 20px;
+
+    }
+    .username {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0px 8px 0px;
+    }
+    .postagem {
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+        width: 100%;
+    }
+        
+}
+@media (max-width: 559px){
+
+
+}

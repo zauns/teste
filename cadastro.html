@@ -8,59 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="styles copy.css">
-
+    <script defer src="index.js"></script>
 </head>
 <body>
     <main>
-        <div id="forms">
-            <div id="titulo-forms">
-                <h1>Crie uma conta</h1>
-            </div>
-            <div id="preenchimento-forms">
-                <div id="nome">
-                    <div id="h2 nome">
-                        <h2>Nome</h2>
-                    </div>
-                    <div id="input nome">
-                        <input type="text" placeholder="Digite seu nome">
-                    </div>
+        <div id="bloco-forms">
+            <div id="titulo-forms"><h1>Crie uma conta</h1></div>
+            <form id="preenchimento-forms" action="home.html">
+                <div class="segmento-forms" id="nome-forms">
+                    <label for="nome"><h2>Nome</h2></label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required >
+                    <div class="error" id="nomeError">O nome não pode conter números ou pontuações.</div>
                 </div>
-                <div id="email">
-
-                    <div id="h2-email">
-                        <h2>Email</h2>
-                    </div>
-                    <div id="input-email">
-                        <input type="email" placeholder="email@gmail.com">
-                    </div>
+                <div class="segmento-forms">
+                    <label for="email"><h2>Email</h2></label>
+                    <input type="text" placeholder="email@email.com" id="email" name="email" required>
+                    <div class="error" id="emailError">O e-mail deve conter "@" e pelo menos 5 caracteres.</div>
                 </div>
-                <div id="senha">
-                    <div id="h2-senha">
-                        <h2>Senha</h2>
-                    </div>
-                    <div id="input-senha">
-                        <input type="password" placeholder="Digite sua senha">
-                    </div>
+                <div class="segmento-forms">
+                    <label for="senha"><h2>Senha</h2></label>
+                    <input type="text" placeholder="Digite sua senha" id="senha" name="senha" required>
+                    <div class="error" id="senhaError">A senha deve ter pelo menos 6 caracteres.</div>
                 </div>
-                <div id="senha">
-                    <div id="h2-senha">
-                        <h2>Confirmar senha</h2>
-                    </div>
-                    <div id="input-consenha">
-                        <input type="password" placeholder="Digite sua senha novamente">
-                    </div>
+                <div class="segmento-forms">
+                    <label for="consenha"><h2>Confirmar senha</h2></label>
+                    <input type="text" placeholder="Digite sua senha novamente" id="consenha" name="consenha" required>
+                    <div class="error" id="consenhaError">As senhas não coincidem.</div>
                 </div>
-            <div id="entrar-cadastro">
-                <div id="botão-entrar">
-                    <button id="entrar">Criar conta</button>
+                <div class="segmento-forms" id="enviar-cadastro">
+                    <button id="enviar" type="submit">Criar conta</button>
+                    <div id="cadastre-se"><h3>Já possui uma conta? <a href="login.html">Log-in</a></h3></div>
                 </div>
-                <div id="cadastre-se">
-                    <h3>Já possui uma conta? <a href="login.html">Log-in</a></h3>
-                </div>
-            </div>
-
+            </form>
         </div>
     </main>
-    
 </body>
 </html>
