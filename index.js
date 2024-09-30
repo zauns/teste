@@ -111,4 +111,62 @@ function trocarSalvo(salvo) {
         salvo.src = "Bookmark.svg"
     }
 }
+let show = 0
+function navbarShow(navbar) {
+    if (!show) {
+        navbar.src = "Close.svg"
+        show = 1;
+    } else if (show) {
+        navbar.src = "Menu.svg"
+        show = 0;
+    }
+};
+
+document.getElementById("Menu").addEventListener("click", () => {
+    navbarShow(this)
+    if (show) {
+        document.querySelector("nav").style.display = "flex"
+    } else if (!show) {
+        document.querySelector("nav").style.display = "none"
+    }
+})
+
+} else if (window.location.pathname === "/login.html") {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        form.action = "home.html";
+
+        
+        const emailInput = document.getElementById("email").value;
+        const senhaInput = document.getElementById("senha").value;
+
+        const emailError = document.getElementById("emailError");
+        const senhaError = document.getElementById("senhaError");
+
+        const erros = document.querySelectorAll(".error");
+        erros.forEach((erro) => {
+            erro.style.display = 'none';
+        })
+        const inputs = document.querySelectorAll("input");
+        inputs.forEach((input) => {
+            input.style.border = "1px solid #D0D5DD"
+        })
+
+        const temArroba = emailInput.includes('@');
+
+        if (!temArroba || emailInput.length < 5 || senhaInput.length < 6) {
+            if (!temArroba ||  emailInput.length < 5) {
+                emailError.style.display = "block";
+                document.getElementById("email").style.border = "1px solid red"
+            }
+            if (senhaInput.length < 6) {
+                senhaError.style.display = "block";
+                document.getElementById("senha").style.border = "1px solid red"
+            }
+            return;
+        } else {
+            window.location.href = form.action;
+        }
+    });
 }
