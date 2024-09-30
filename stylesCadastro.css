@@ -36,7 +36,7 @@
         gap: 32px;
         background-color: #ffffff;
         width: 540px;
-        height: 660px;
+        height: fit-content;
         border-radius: 20px;
     }
     #titulo-forms{
