@@ -10,7 +10,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body>
-        <header className="flex-row, w-full, h-[80px]">
+        <header className="w-full, h-[80px]">
           
         </header>
         {children}
