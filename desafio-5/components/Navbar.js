@@ -32,7 +32,7 @@ const InputContainer = styled.div`
     border-radius: 20px;
 
     &:focus-within {
-        border: solid 1px #000;
+        border: solid 2px #000;
     }
 `;
 
@@ -75,8 +75,8 @@ const MenuItem = styled.li`
 const Navbar = () => {
     return (
     <NavbarContainer>
-        <Logo src="/images/Frame 4.png" href="/"/>
-        <InputContainer> <SearchIcon src="/images/search.svg"/> <SearchInput type="text" placeholder='Buscar'/> </InputContainer>
+        <Logo src="/Frame 4.png" href="/"/>
+        <InputContainer> <SearchIcon src="/search.svg"/> <SearchInput type="text" placeholder='Buscar'/> </InputContainer>
         <NavMenu>
             <MenuItem><Link href={"/"}>Sobre nós</Link></MenuItem>
             <MenuItem><Link href={"/"}>Produtos</Link></MenuItem>
