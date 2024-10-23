@@ -116,7 +116,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <img src='/facebook branco.svg'/>
-                        <span>facebook</span>
+                        <span>Facebook</span>
                     </div>
                 </Content>
             </ContentContainer>
