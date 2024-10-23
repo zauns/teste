@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import React from 'react';
 
 const NavbarContainer = styled.nav`
     width: 100vw;
@@ -18,6 +19,7 @@ const Logo = styled.img `
     height: 52px;
     cursor: pointer;
 `;
+
 
 const InputContainer = styled.div`
     width: 400px;
@@ -37,7 +39,6 @@ const InputContainer = styled.div`
 `;
 
 const SearchIcon = styled.img`
-    src: 'desafio-5\public\images\search.svg';
     width: 20px;
     height: 20px;
 `;
@@ -75,16 +76,17 @@ const MenuItem = styled.li`
 const Navbar = () => {
     return (
     <NavbarContainer>
-        <Logo src="/Frame 4.png" href="/"/>
+        <Link href={"/"}><Logo src="/Frame 4.png"/></Link>
         <InputContainer> <SearchIcon src="/search.svg"/> <SearchInput type="text" placeholder='Buscar'/> </InputContainer>
         <NavMenu>
             <MenuItem><Link href={"/"}>Sobre nós</Link></MenuItem>
             <MenuItem><Link href={"/"}>Produtos</Link></MenuItem>
             <MenuItem><Link href={"/"}>Fale Conosco</Link></MenuItem>
             <MenuItem><Link href={"/"}>Carrinho</Link></MenuItem>
-            <MenuItem><Link href={"/"}>Carrinho</Link></MenuItem>
+            <MenuItem><Link href={"/"}>Cadastre-se</Link></MenuItem>
         </NavMenu>
     </NavbarContainer>
+    
     )
 }
 

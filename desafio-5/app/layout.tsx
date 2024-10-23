@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import './globals.css'; 
-import Navbar from '../components/Navbar.js';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer';
 
 
 export const metadata: Metadata = {
@@ -15,10 +16,9 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
       </head>
       <body>
-        <header>
-          <Navbar/>
-        </header>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
